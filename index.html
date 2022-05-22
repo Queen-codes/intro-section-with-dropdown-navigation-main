@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,7 +15,76 @@
   </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-logo"> <img src="/images/logo.svg" alt=""></div>
+    <div class="hamburger"> 
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <!--begining of dropdown content-->
+  <div class="nav-menu">
+    <div class="dropdown-nav">
+      <button class="drop-click nav-item">Features <img src="/images/icon-arrow-up.svg" alt=""></button>
+      <div class="menu-content">
+        <a class="links-hidden" href="#"> <img src="/images/icon-todo.svg" alt=""> To do List</a>
+        <a class="links-hidden" href="#"> <img src="/images/icon-calendar.svg" alt=""> Calendar</a>
+        <a class="links-hidden" href="#"> <img src="/images/icon-reminders.svg" alt="">Reminders</a>
+        <a class="links-hidden" href="#"> <img src="/images/icon-planning.svg" alt=""> Planning
+        </a>
+      </div>
+      <!--end of menu content-->
+    </div>
+    <!--end of first dropdown-->
+    <div class="dropdown-nav">
+      <button class="drop-click nav-item">Calendar <img src="/images/icon-arrow-down.svg" alt=""></button>
+      <div class="menu-content">
+        <a  class= "links-hidden" href="#">History</a>
+        <a  class= "links-hidden" href="#">Our Team</a>
+        <a  class= "links-hidden" href="#">Blog</a>
+      </div>
+    </div>
+    <!--end of second dropdown-->
+   <a class= "nav-item" href="#">Careers</a>
+   <a class= "nav-item" href="#">Blog</a>
+   <div class="cta-nav-buttons">
+    <button class="btn_transparent">Login</button>
+    <button class="btn_large">Register</button>
+  </div>
+  
+</div>
+<!--end of nav menu-->
+<!--<div class="cta-nav-buttons">
+  <button class="btn_transparent">Login</button>
+  <button class="btn_large">Register</button>
+</div> -->
+  </nav>
 
+<section class="hero-section">
+  <div class="hero-image">
+   <img src="/images/image-hero-mobile.png" alt="">
+  </div>
+  <div class="hero-text">
+    <h1>Make remote work</h1>
+    <p>Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+      <button class="btn_dark"> Learn More</button>
+  </div>
+  
+  
+</section>
+
+<section class="brands">
+  <img src="/images/client-databiz.svg" alt="">
+  <img src="/images/client-audiophile.svg" alt="">
+  <img src="/images/client-meet.svg" alt="">
+  <img src="/images/client-maker.svg" alt="">
+</section>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://github.com/Queen-codes">Queen Islamiat</a>.
+</div>
+<!---
   Features
   Company
   Careers
@@ -34,6 +103,7 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
+  <script src="script.js"></script>
 </html>
